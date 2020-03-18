@@ -27,4 +27,3 @@ CREATE TABLE `request_history` (
   `timestamp` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
--- INSERT INTO `request_history` VALUES ('1', 'http://http://www.omdbapi.com/?i=tt2488496&apikey=57ec2f6d', '201.23.3.3', '2020-01-01 10:10:10+05:30');
