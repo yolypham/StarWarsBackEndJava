@@ -1,6 +1,7 @@
 # StarWarsBackEndJava
 Java back end REST API with Spring Boot 2
--Stack used: Java 13, Springboot2, JPA, 
+
+- Stack used: Java 13, Springboot2, JPA
 
 ## MySQL DB Set up
 1. Create local instance connection with default hostname and port
