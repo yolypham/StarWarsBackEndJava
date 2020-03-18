@@ -9,7 +9,7 @@ Java back end REST API with Spring Boot 2
 3. cd into projec folder:  /StarWarsBackEndJava 
 4. run script in: sql/create-db-script.sql
 
-## Start up back end (Mac)
+## Start up back end
 1. In Terminal, cd into projec folder:  /StarWarsBackEndJava
 2. type: 
 >./mvnw
