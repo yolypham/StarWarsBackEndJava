@@ -1,14 +1,19 @@
 # StarWarsBackEndJava
 Java back end REST API with Spring Boot 2
 
-## MySQL DB Set up
-1. Run script in: sql/create-db-script.sql
+- Stack used: Java 13, Springboot2, JPA
 
-## Start up back end (Mac)
-1. Load up Terminal
-2. cd into projec folder: /starwars
-3. type: 
+## MySQL DB Set up
+1. Create local instance connection with default hostname and port
+>Hostname: 127.0.0.1 and Port: 3306
+2. test db connection
+3. cd into projec folder:  /StarWarsBackEndJava 
+4. run script in: sql/create-db-script.sql
+
+## Start up back end
+1. In Terminal, cd into projec folder:  /StarWarsBackEndJava
+2. type: 
 >./mvnw
-4. Ready... will startup in port 8080
-5. Test in the browser
+3. Ready... will startup in port 8080
+4. Test in the browser
 >http://localhost:8080/api/movie?sortBy=STORY
