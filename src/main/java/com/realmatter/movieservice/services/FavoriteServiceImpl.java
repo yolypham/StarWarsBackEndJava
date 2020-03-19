@@ -15,8 +15,8 @@ public class FavoriteServiceImpl implements FavoriteService {
 
   @Override
   public Favorite addFavorite(Favorite favorite) {
-    favoriteRepository.save(favorite);
-    return favorite;
+    Favorite favoriteNew = favoriteRepository.save(favorite);
+    return favoriteNew;
   }
 
   @Override
