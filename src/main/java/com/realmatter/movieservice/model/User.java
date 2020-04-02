@@ -14,6 +14,9 @@ public class User {
   private String userid;
   private String name;
 
+  public User() {
+  }
+
   public String getUserid() {
     return userid;
   }

@@ -9,7 +9,7 @@ public class Movie {
 
   @JsonProperty("position")
   private Position position;
-  
+
   public String getImdbId() {
     return imdbId;
   }

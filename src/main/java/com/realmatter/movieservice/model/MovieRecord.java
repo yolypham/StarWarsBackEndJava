@@ -6,10 +6,13 @@ public class MovieRecord {
 
   @JsonProperty("imdbId")
   private String imdbId;
+
   @JsonProperty("Title")
   private String title;
+
   @JsonProperty("Actors")
   private String actors;
+
   @JsonProperty("coverArtImageUrl")
   private String coverArtImageUrl;
   @JsonProperty("Story")
@@ -63,5 +66,17 @@ public class MovieRecord {
 
   public void setCoverArtImageUrl(String coverArtImageUrl) {
     this.coverArtImageUrl = coverArtImageUrl;
+  }
+
+  @Override
+  public String toString() {
+    return "MovieRecord{" +
+            "imdbId='" + imdbId + '\'' +
+            ", title='" + title + '\'' +
+            ", actors='" + actors + '\'' +
+            ", coverArtImageUrl='" + coverArtImageUrl + '\'' +
+            ", story=" + story +
+            ", machete=" + machete +
+            '}';
   }
 }

@@ -39,4 +39,13 @@ public class Favorite {
   public void setFavorite_imdbID(String favorite_imdbID) {
     this.favorite_imdbID = favorite_imdbID;
   }
+
+  @Override
+  public String toString() {
+    return "Favorite{" +
+            "id=" + id +
+            ", userId='" + userId + '\'' +
+            ", favorite_imdbID='" + favorite_imdbID + '\'' +
+            '}';
+  }
 }

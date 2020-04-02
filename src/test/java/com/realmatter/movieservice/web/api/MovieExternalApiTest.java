@@ -53,6 +53,6 @@ public class MovieExternalApiTest {
             new ParameterizedTypeReference<MovieDetail>() {});
 
     assertThat(response.getStatusCode(), equalTo(HttpStatus.OK));
-    //    MovieDetail movieDetail = response.getBody();
+    MovieDetail movieDetail = response.getBody();
   }
 }

@@ -53,6 +53,7 @@ public class FavoriteControllerTest {
 
     assertThat(response.getStatusCode(), equalTo(HttpStatus.OK));
     List<Favorite> favorites = response.getBody();
+    System.out.println(favorites.toString());
   }
 
   @Test
@@ -73,11 +74,12 @@ public class FavoriteControllerTest {
 
     assertThat(response.getStatusCode(), equalTo(HttpStatus.CREATED));
     Favorite favorites = response.getBody();
+    System.out.println(favorites.toString());
   }
 
   @Test
   public void testDeleteFavoriteById() throws Exception {
-    long id = 5;
+    long id = 80;
 
     RestTemplate restTemplate = new RestTemplate();
 
@@ -86,7 +88,7 @@ public class FavoriteControllerTest {
 
   @Test
   public void testGetFavoriteById() throws Exception {
-    long id = 5;
+    long id = 8;
 
     RestTemplate restTemplate = new RestTemplate();
     HttpHeaders headers = new HttpHeaders();
@@ -99,5 +101,6 @@ public class FavoriteControllerTest {
 
     assertThat(response.getStatusCode(), equalTo(HttpStatus.OK));
     Favorite favorites = response.getBody();
+    System.out.println(favorites.toString());
   }
 }

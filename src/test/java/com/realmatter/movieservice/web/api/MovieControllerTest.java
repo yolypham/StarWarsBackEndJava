@@ -31,7 +31,7 @@ public class MovieControllerTest {
             new ParameterizedTypeReference<List<MovieRecord>>() {});
 
     assertThat(response.getStatusCode(), equalTo(HttpStatus.OK));
-    List<MovieRecord> movies = response.getBody();
+//    List<MovieRecord> movies = response.getBody();
   }
 
   @Test
@@ -50,6 +50,6 @@ public class MovieControllerTest {
             new ParameterizedTypeReference<List<MovieRecord>>() {});
 
     assertThat(response.getStatusCode(), equalTo(HttpStatus.OK));
-    List<MovieRecord> movies = response.getBody();
+//    List<MovieRecord> movies = response.getBody();
   }
 }

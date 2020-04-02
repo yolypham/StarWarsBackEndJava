@@ -1,214 +1,186 @@
 package com.realmatter.movieservice.model;
 
-import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class MovieDetail {
 
   @JsonProperty("Title")
-  private String Title;
-
+  private String title;
   @JsonProperty("Year")
-  private String Year;
-
+  private String year;
   @JsonProperty("Rated")
-  private String Rated;
-
+  private String rated;
   @JsonProperty("Released")
-  private String Released;
-
+  private String released;
   @JsonProperty("Runtime")
-  private String Runtime;
-
+  private String runtime;
   @JsonProperty("Genre")
-  private String Genre;
-
+  private String genre;
   @JsonProperty("Director")
-  private String Director;
-
+  private String director;
   @JsonProperty("Writer")
-  private String Writer;
-
+  private String writer;
   @JsonProperty("Actors")
-  private String Actors;
-
+  private String actors;
   @JsonProperty("Plot")
-  private String Plot;
-
+  private String plot;
   @JsonProperty("Language")
-  private String Language;
-
+  private String language;
   @JsonProperty("Country")
-  private String Country;
-
+  private String country;
   @JsonProperty("Awards")
-  private String Awards;
-
+  private String awards;
   @JsonProperty("Poster")
-  private String Poster;
-
+  private String poster;
   @JsonProperty("Ratings")
-  private Rating[] Ratings;
-
+  private Rating[] ratings;
   @JsonProperty("Metascore")
-  private String Metascore;
-
+  private String metascore;
   @JsonProperty("imdbRating")
   private String imdbRating;
-
   @JsonProperty("imdbVotes")
   private String imdbVotes;
-
   @JsonProperty("imdbID")
   private String imdbID;
-
   @JsonProperty("Type")
-  private String Type;
-
+  private String type;
   @JsonProperty("DVD")
-  private String DVD;
-
+  private String dvd;
   @JsonProperty("BoxOffice")
-  private String BoxOffice;
-
+  private String boxOffice;
   @JsonProperty("Production")
-  private String Production;
-
+  private String production;
   @JsonProperty("Website")
-  private String Website;
-
+  private String website;
   @JsonProperty("Response")
-  private String Response;
-
-  // setter and getter:
+  private String response;
 
   public String getTitle() {
-    return Title;
+    return title;
   }
 
   public void setTitle(String title) {
-    Title = title;
+    this.title = title;
   }
 
   public String getYear() {
-    return Year;
+    return year;
   }
 
   public void setYear(String year) {
-    Year = year;
+    this.year = year;
   }
 
   public String getRated() {
-    return Rated;
+    return rated;
   }
 
   public void setRated(String rated) {
-    Rated = rated;
+    this.rated = rated;
   }
 
   public String getReleased() {
-    return Released;
+    return released;
   }
 
   public void setReleased(String released) {
-    Released = released;
+    this.released = released;
   }
 
   public String getRuntime() {
-    return Runtime;
+    return runtime;
   }
 
   public void setRuntime(String runtime) {
-    Runtime = runtime;
+    this.runtime = runtime;
   }
 
   public String getGenre() {
-    return Genre;
+    return genre;
   }
 
   public void setGenre(String genre) {
-    Genre = genre;
+    this.genre = genre;
   }
 
   public String getDirector() {
-    return Director;
+    return director;
   }
 
   public void setDirector(String director) {
-    Director = director;
+    this.director = director;
   }
 
   public String getWriter() {
-    return Writer;
+    return writer;
   }
 
   public void setWriter(String writer) {
-    Writer = writer;
+    this.writer = writer;
   }
 
   public String getActors() {
-    return Actors;
+    return actors;
   }
 
   public void setActors(String actors) {
-    Actors = actors;
+    this.actors = actors;
   }
 
   public String getPlot() {
-    return Plot;
+    return plot;
   }
 
   public void setPlot(String plot) {
-    Plot = plot;
+    this.plot = plot;
   }
 
   public String getLanguage() {
-    return Language;
+    return language;
   }
 
   public void setLanguage(String language) {
-    Language = language;
+    this.language = language;
   }
 
   public String getCountry() {
-    return Country;
+    return country;
   }
 
   public void setCountry(String country) {
-    Country = country;
+    this.country = country;
   }
 
   public String getAwards() {
-    return Awards;
+    return awards;
   }
 
   public void setAwards(String awards) {
-    Awards = awards;
+    this.awards = awards;
   }
 
   public String getPoster() {
-    return Poster;
+    return poster;
   }
 
   public void setPoster(String poster) {
-    Poster = poster;
+    this.poster = poster;
   }
 
   public Rating[] getRatings() {
-    return Ratings;
+    return ratings;
   }
 
   public void setRatings(Rating[] ratings) {
-    Ratings = ratings;
+    this.ratings = ratings;
   }
 
   public String getMetascore() {
-    return Metascore;
+    return metascore;
   }
 
   public void setMetascore(String metascore) {
-    Metascore = metascore;
+    this.metascore = metascore;
   }
 
   public String getImdbRating() {
@@ -236,50 +208,50 @@ public class MovieDetail {
   }
 
   public String getType() {
-    return Type;
+    return type;
   }
 
   public void setType(String type) {
-    Type = type;
+    this.type = type;
   }
 
-  public String getDVD() {
-    return DVD;
+  public String getDvd() {
+    return dvd;
   }
 
-  public void setDVD(String DVD) {
-    this.DVD = DVD;
+  public void setDvd(String dvd) {
+    this.dvd = dvd;
   }
 
   public String getBoxOffice() {
-    return BoxOffice;
+    return boxOffice;
   }
 
   public void setBoxOffice(String boxOffice) {
-    BoxOffice = boxOffice;
+    this.boxOffice = boxOffice;
   }
 
   public String getProduction() {
-    return Production;
+    return production;
   }
 
   public void setProduction(String production) {
-    Production = production;
+    this.production = production;
   }
 
   public String getWebsite() {
-    return Website;
+    return website;
   }
 
   public void setWebsite(String website) {
-    Website = website;
+    this.website = website;
   }
 
   public String getResponse() {
-    return Response;
+    return response;
   }
 
   public void setResponse(String response) {
-    Response = response;
+    this.response = response;
   }
 }
